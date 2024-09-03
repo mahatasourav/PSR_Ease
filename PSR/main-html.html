@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/fav-icon logo.webp" type="image/x-icon">
+    <title>Image Enhancer</title>
+    <link rel="stylesheet" href="main-style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <!-- <li><a href="#">Enhance</a></li> -->
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Contact Us</a></li>
+          
+        </ul>
+        <ul ><li><a href="login.html" class="logout"> <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png" alt="" class="logout-img"></a></li></ul>
+
+    </nav>
+
+    <header class="hero-section">
+        <h1>Enhance Your Images with Ease</h1>
+        <p>Upload, enhance, and download your images with our intuitive tool.</p>
+    </header>
+
+    <div class="main-section">
+        <div class="upload-area">
+            <p>Drag and drop your image here or <span>browse</span></p>
+            <input type="file" id="imageUpload" accept="image/*"  id="imageInput">
+        </div>
+
+        <div class="image-comparison">
+            <div class="image-before">
+                <h3>Original Image</h3>
+                <img id="originalImage" src="#" alt="Original Image">
+            </div>
+            <div class="image-after">
+                <h3>Enhanced Image</h3>
+                <img id="enhancedImage" src="#" alt="Enhanced Image">
+            </div>
+        </div>
+
+        <div class="enhancement-explanation">
+            <h3>Enhancement Explanation</h3>
+            <p id="explanationText">Explanation of what was enhanced will appear here.</p>
+        </div>
+
+        <div class="processing-bar">
+            <div class="progress"></div>
+        </div>
+
+        <button id="downloadButton" class="download-btn" disabled>Download Enhanced Image</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Image Enhancer. All rights reserved.</p>
+    </footer>
+
+    <script src="main-script.js"></script>
+</body>
+</html>

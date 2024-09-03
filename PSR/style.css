@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg-img img{
+    height: 100vh;
+    width: 100vw;
+    object-fit:cover;
+    object-position:right;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+/* header starts */
+.header{
+    width: 45vw;
+    height: 70vh;
+    border: 2px solid green;
+}
+/* main -hero starts */
+.main-content{
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+   border: 1px solid grey;
+    width: 45vw;
+    height: 75vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 30px;
+    padding-right: 0px;
+    background-color: rgba(202, 196, 193, 0.01);
+    
+    border-radius: 20px;
+
+}
+
+
+.main-content div{
+    display: flex;
+    width: 35vw;
+}
+.main-content-sec-1 h1{
+    color: blue;
+    font-size: 34px;
+    font-family:sans-serif;
+    height: 70px;
+    justify-content: flex-start;
+}
+.main-content-sec-2 form{
+    display: flex;
+  flex-direction: column;
+ 
+   gap: 40px;
+
+}
+.main-content-sec-2 form input{
+  width: 35vw;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.main-content-sec-2 form button{
+    width: 35vw;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+  }
+.main-content-sec-3 {
+   
+    justify-content: flex-end;
+}
+.main-content-sec-3 a {
+   font-size: 17px;
+   font-family: 'Times New Roman', Times, serif;
+   text-decoration: none;
+   color: black;
+   font-weight: 600;
+   
+}
+.main-content-sec-4{
+    
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 35vw;
+    align-items: center;
+}
+.main-content-sec-4 :nth-child(1){
+    width: 20vw;
+    height: 40px;
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 3px 9px 4px;
+    cursor: pointer;
+}
+.main-content-sec-4 :nth-child(2){
+    width: 33vw;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+    font-weight:300;
+    cursor: pointer;
+}
+
+.main-content-sec-5{
+    justify-content: center;
+    height: 60px;
+   
+    align-items: flex-end;
+  
+}
+.main-content-sec-5 a{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+}
+.main-content-sec-6 {
+ 
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    padding: 2px 0px;
+    }
+.main-content-sec-6 a img{
+height: 27px;
+width: 37px;
+}
+/* main media quaries starts */
+
+@media only screen and ( max-width: 780px ) {
+    .bg-img img{
+       
+        opacity: 0.7;
+    }
+    
+    .main-content{
+        width: 80vw;
+        top: 8vh;
+        height:80vh;
+        justify-content: center;
+        border: 0px;
+        box-shadow: 0px 0px 0px 0px;
+        border-radius: 0px;
+        
+    }
+    .main-content div{
+     
+        width: 65vw;
+    }
+    .main-content-sec-1 h1{
+       
+        font-size: 24px;
+        height: 50px;
+        
+    }
+    .main-content-sec-2 form input{
+        width: 60vw;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 20px;
+        font-size: 15px;
+      }
+
+      .main-content-sec-2 form{
+  height: 150px;
+     gap: 20px;
+     justify-content: flex-end;
+    
+    }
+    .main-content-sec-2 form input{
+      
+        height: 40px;
+        border-radius: 10px;
+        padding-left: 20px;
+        font-size: 16px;
+      }
+      .main-content-sec-3 a {
+        font-size: 14px;
+        font-family: 'Times New Roman', Times, serif;
+       font-weight: 500;
+       color: blue;
+     }
+     .main-content-sec-4 {
+        height: 100px;
+        justify-content: flex-end;
+     }
+     
+    .main-content-sec-4 :nth-child(2){
+        width: 45vw;
+        height: 40px;
+        border-radius: 10px;
+        background-color: white;
+        font-size: 16px;
+        font-weight:300;
+        
+    }
+    
+}
+/* media quaries end of main */
+.invalid {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #ffebeb;
+    color: red;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -30px;
+}
